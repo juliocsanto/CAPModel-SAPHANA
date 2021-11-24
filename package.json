@@ -11,7 +11,8 @@
         "hdb": "^0.18.3"
     },
     "scripts": {
-        "start": "cds run"
+        "start": "cds run",
+        "undeploy": "cf undeploy MyHANAApp --delete-services --delete-service-keys"
     },
     "eslintConfig": {
         "extends": "eslint:recommended",
@@ -50,5 +51,8 @@
                 "kind": "hana"
             }
         }
+    },
+    "devDependencies": {
+        "@sap/ux-specification": "^1.90.14"
     }
 }
